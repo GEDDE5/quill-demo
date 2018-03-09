@@ -13,7 +13,7 @@
   .page__link {
     color: hsla(0, 0, 0, 1);
     padding: 0 0.5rem 0 0;
-    text-decoration: none;
+    text-decoration: underline;
     transition: 400ms color;
 
     &:hover {
