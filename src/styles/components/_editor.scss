@@ -1,0 +1,18 @@
+/* =============================
+=            EDITOR            =
+============================= */
+
+$toolbar-height: 43px;
+$editor-height: 300px;
+$total-quill-height: $toolbar-height + $editor-height;
+
+.editor {
+  height: $editor-height;
+  width: 100%;
+
+  .ql-toolbar {
+    height: $toolbar-height;
+  }
+}
+
+/* ====  End of EDITOR  ===== */

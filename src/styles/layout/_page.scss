@@ -1,0 +1,41 @@
+/* ===========================
+=            PAGE            =
+=========================== */
+
+.page {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  margin: 0 auto;
+  width: 80%;
+
+  .page__link {
+    color: hsla(0, 0, 0, 1);
+    padding: 0 0.5rem 0 0;
+    text-decoration: none;
+    transition: 400ms color;
+
+    &:hover {
+      color: hsla(20, 100%, 45%, 1);
+    }
+  }
+
+  .page__title {
+    color: hsla(0, 0, 0, 1);
+    font-size: 2rem;
+    position: absolute;
+    top: 3rem;
+  }
+
+  @media (max-width: 1000px) {
+    height: unset;
+
+    .page__title {
+      position: unset;
+      margin: 3rem 0;
+    }
+  }
+}
+
+/* ====  End of PAGE  ===== */
