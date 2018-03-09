@@ -14,7 +14,7 @@
     justify-content: space-between;
     align-items: center;
     height: $toolbar-height;
-    padding: 8px;
+    padding: 8px 8px 8px 32px;
 
     .preview__heading__copy-to-clipboard-button {
       border: 1px solid hsl(0, 0, 90%);
@@ -22,12 +22,9 @@
       font-size: 80%;
       padding: 4px 8px;
       text-align: center;
+      transform: translateY(1px);
       user-select: none;
       width: 125px;
-
-      &.preview__heading__copy-to-clipboard-button--copied {
-        font-weight: 600;
-      }
 
       &:hover {
         border-color: hsl(0, 0, 70%);
@@ -35,6 +32,12 @@
 
       &:active {
         border-color: green;
+      }
+
+      &.preview__heading__copy-to-clipboard-button--copied {
+        border: none;
+        cursor: default;
+        font-weight: 600;
       }
     }
   }

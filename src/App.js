@@ -3,10 +3,7 @@ import React, { Component } from 'react'
 import Editor from 'components/Editor/Editor'
 
 import Preview from 'components/Preview/Preview'
-import PreviewHeading from 'components/Preview/PreviewHeading'
-import PreviewBody from 'components/Preview/PreviewBody'
 
-// eslint-disable-next-line react/prefer-stateless-function
 class App extends Component {
   constructor() {
     super()
@@ -16,7 +13,7 @@ class App extends Component {
     }
   }
 
-  updateEditorValue = html => this.setState({ html })
+  setEditorValue = html => this.setState({ html })
 
   render() {
     const {
@@ -38,7 +35,7 @@ class App extends Component {
 
           <Editor
             placeholder='Type here'
-            updateEditorValue={this.updateEditorValue} />
+            updateEditorValue={this.setEditorValue} />
 
           <Preview
             heading='Output HTML'

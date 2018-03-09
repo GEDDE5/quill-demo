@@ -14,6 +14,10 @@ class PreviewHeading extends Component {
     }
   }
 
+  componentWillReceiveProps() {
+    this.setState({ copied: false })
+  }
+
   handleOnCopy = () => this.setState({ copied: true })
 
   render() {
