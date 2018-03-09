@@ -1,3 +1,6 @@
+# Build styles
+src/**/*.css
+
 #sublime
 quill-demo.sublime-workspace
 
