@@ -13,7 +13,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: $toolbar-height;
+    height: $toolbar-height + 5px;
     padding: 8px 8px 8px 32px;
 
     .preview__heading__copy-to-clipboard-button {
