@@ -40,14 +40,9 @@ class App extends Component {
             placeholder='Type here'
             updateEditorValue={this.updateEditorValue} />
 
-          <Preview>
-            <PreviewHeading>
-              Output HTML
-            </PreviewHeading>
-            <PreviewBody>
-              {html}
-            </PreviewBody>
-          </Preview>
+          <Preview
+            heading='Output HTML'
+            output={html} />
         </div>
       </div>
     )
